@@ -194,7 +194,7 @@ jobs:
         if: ${{ env.VERSION != 'master' }}
         uses: actions/checkout@v4
         with:
-          repository: rustdesk/rustdesk
+          repository: 9cb14c1ec0/rustdesk
           ref: refs/tags/${{ env.VERSION }}
           submodules: recursive
        
@@ -202,7 +202,7 @@ jobs:
         if: ${{ env.VERSION == 'master' }}
         uses: actions/checkout@v4
         with:
-          repository: rustdesk/rustdesk
+          repository: 9cb14c1ec0/rustdesk
           submodules: recursive
 
       - name: Install flutter
